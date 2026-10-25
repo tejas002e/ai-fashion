@@ -1,0 +1,8 @@
+{
+  "name": "ai-fashion-recommender",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "streamlit run main.py --server.port 5000 --server.address 0.0.0.0"
+  }
+}
