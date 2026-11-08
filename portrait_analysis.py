@@ -13,7 +13,7 @@ from PIL import Image, ImageCms, ImageOps, UnidentifiedImageError
 from sklearn.cluster import KMeans
 
 
-MAX_UPLOAD_BYTES = 10_000_000
+MAX_UPLOAD_BYTES = 20_000_000
 MAX_IMAGE_PIXELS = 20_000_000
 MAX_IMAGE_SIDE = 2_400
 MAX_DETECTION_SIDE = 1_600
@@ -30,7 +30,7 @@ def decode_uploaded_image(data: bytes) -> Image.Image:
     if not data:
         raise PortraitAnalysisError("The uploaded file is empty.")
     if len(data) > MAX_UPLOAD_BYTES:
-        raise PortraitAnalysisError("The image is larger than the 10 MB upload limit.")
+        raise PortraitAnalysisError("The image is larger than the 20 MB upload limit.")
 
     try:
         with warnings.catch_warnings():
