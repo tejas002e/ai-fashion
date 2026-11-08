@@ -872,10 +872,3 @@ elif st.session_state.page == 'About':
     st.info("Coming Soon: Virtual Try-On, Real-time Webcam Analysis, and Integration with H&M/Myntra APIs for live shopping.")
     st.markdown('</div>', unsafe_allow_html=True)
 
-# --- FOOTER ---
-st.markdown("""
-    <footer class="app-footer" role="contentinfo">
-        © 2026 CHROMA FASHION AI. ALL RIGHTS RESERVED. <br>
-        POWERED BY OPENCV COMPUTER VISION & RULE-BASED COLOR GUIDANCE.
-    </footer>
-""", unsafe_allow_html=True)
